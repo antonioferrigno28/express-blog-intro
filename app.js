@@ -14,6 +14,39 @@ const express = require("express");
 const app = express();
 const port = 3000;
 
+const posts = [
+  {
+    titolo: "Post 1",
+    contenuto: "Questo è il contenuto del primo post.",
+    immagine: "/images/image1.jpg",
+    tags: ["generico", "esempio", "blog"],
+  },
+  {
+    titolo: "Post 2",
+    contenuto: "Questo è il contenuto del secondo post.",
+    immagine: "/images/image2.jpg",
+    tags: ["tutorial", "articolo", "guida"],
+  },
+  {
+    titolo: "Post 3",
+    contenuto: "Questo è il contenuto del terzo post.",
+    immagine: "/images/image3.jpg",
+    tags: ["notizie", "aggiornamenti", "novità"],
+  },
+  {
+    titolo: "Post 4",
+    contenuto: "Questo è il contenuto del quarto post.",
+    immagine: "/images/image4.jpg",
+    tags: ["idee", "progetto", "ispirazione"],
+  },
+  {
+    titolo: "Post 5",
+    contenuto: "Questo è il contenuto del quinto post.",
+    immagine: "/images/image5.jpg",
+    tags: ["blog", "tecnologia", "coding"],
+  },
+];
+
 app.get("/", (req, res) => {
   res.send("Server del mio blog");
 });
